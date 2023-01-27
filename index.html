@@ -1,56 +1,20 @@
 <html>
   <head>
-  <title>Hi, Maria!</title>
-    <style>
-      p {
-      text-align: center;
-      font-size: 32px;
-      font-family: Candara, Oswald;
-      }   
-      img {
-      display: block;
-      margin: 0 auto;
-      width: 25%;
-      }
-    </style>
+    <link rel="stylesheet" type="text/css" href="style.css" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Hi, Maria!</title>
   </head>
   <body>
     <h1>can we hang out soon?</h1>
-    <img src="https://media.tenor.com/zGm5acSjHCIAAAAM/cat-begging.gif">
+    <div class="main"> 
+      <img src="https://media.tenor.com/zGm5acSjHCIAAAAM/cat-begging.gif">
+
+      <div class="btn-group">
+        <button id="bt1">YES MI AMOR!</button>
+        <button id="bt2">NOOOOOOO</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
   </body>
-    <title>Bottons</title>
-    <style>
-    #bt1 {
-    position: fixed;
-    top: 70%;
-    left: 55%;
-    transform: translate(-50%, -50%);
-    }
-    #bt2 {
-    position: absolute;
-    left: 39%;
-      top: 68%;
-    }
-    </style>
-  </head>
-    <body>
-      <button id="bt1">YES MI AMOR!</button>
-      <button id="bt2">NOOOOOOO</button>
-      <script>
-      const bt2 = document.getElementById('bt2');
-      let left = 40;
-      bt2.addEventListener('mouseover', function() {
-        if( left == 40 ){
-          left = 70;
-        } else {
-          left = 40;
-        }
-        this.style.left = left + '%';
-      });
-      </script>
-      <script>document.getElementById('bt1').addEventListener('click', function() {
-      alert('YAYY THANK U LOVE U');
-      });
-      </script>
-    </body>
 </html>
